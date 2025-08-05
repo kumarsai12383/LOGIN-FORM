@@ -35,8 +35,10 @@ const loginForm = document.getElementById("loginForm");
           messageDiv.textContent = "Wrong username or password";
           messageDiv.className = "message error";
           messageDiv.style.display = "block";
+              loginForm.reset();
         }
 
       });
+
 
 
