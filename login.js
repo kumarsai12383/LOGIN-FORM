@@ -8,7 +8,7 @@ const loginForm = document.getElementById("loginForm");
         e.preventDefault();
 
         // Get form values
-        const username = usernameInput.value;
+        const username = usernameInput.value.toLowercase;
         const password = passwordInput.value;
 
         // Simple validation with if conditions
@@ -36,4 +36,5 @@ const loginForm = document.getElementById("loginForm");
           messageDiv.className = "message error";
           messageDiv.style.display = "block";
         }
+
       });
